@@ -18,8 +18,7 @@ class RecaptchaServiceProvider extends ServiceProvider
         }
         
         Blade::directive('recaptcha', function() {
-            $siteKey = config('recaptcha.site_key');
-            return "<?php echo '<div class=\"g-recaptcha\" data-sitekey=\"{$siteKey}\"></div><script src=\"https://www.google.com/recaptcha/api.js\"></script>'; ?>";
+            return '<?php echo \'<div class="g-recaptcha" data-sitekey="\' . config("recaptcha.site_key") . \'"></div><script src="https://www.google.com/recaptcha/api.js"></script>\'; ?>';
         });
     }
 
