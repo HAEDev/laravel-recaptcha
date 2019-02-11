@@ -1,0 +1,27 @@
+{
+    "name": "HAEDev/laravel-recaptcha",
+    "description": "Recaptcha middleware for Laravel",
+    "authors": [
+        {
+            "name": "Trinh Nguyen",
+            "email": "nt@winged.info",
+            "homepage": "http://winged.info"
+        }
+    ],
+    "homepage": "https://github.com/HAEDev/laravel-recaptcha",
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "HAEDev\\Recaptcha\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HAEDev\\Recaptcha\\RecaptchaServiceProvider"
+            ]
+        }
+    }
+}
