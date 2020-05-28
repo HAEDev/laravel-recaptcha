@@ -59,6 +59,6 @@ class Recaptcha {
     }
     
     private function fail($error) {
-        return redirect()->back()->withErrors(['recaptcha' => $error]);
+        return redirect()->back()->withInput()->withErrors(['recaptcha' => $error]);
     }
 }
