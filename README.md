@@ -1,7 +1,7 @@
 # Recaptcha v2 middleware for Laravel
 
 ### Publish config file
-composer vendor:publish --tag=config
+php artisan vendor:publish --tag=config
 
 ### Usage
 - Set `RECAPTCHA_SITE_KEY`, `RECAPTCHA_SECRET` in .env file
