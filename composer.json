@@ -9,9 +9,6 @@
         }
     ],
     "homepage": "https://github.com/HAEDev/laravel-recaptcha",
-    "require": {
-        "illuminate/support": "~5"
-    },
     "autoload": {
         "psr-4": {
             "HAEDev\\Recaptcha\\": "src/"
